@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Main Menu</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    
+    
+</head>
+    
+    <header>
+        <img id="sideBar" src="Menu.png" usemap="#buttmap" width="20" height="20">
+         <a id="Home" href="Index.html">Home</a>
+        <ul class="Head">
+            <li>
+                <div class="dropdown">
+                    <button onmouseover=myFunction(aboutMe) id="drpBut" onmouseout=myFunction(aboutMe) class="dropbtn">About Me</button>
+                        <div onmouseover=myFunction(aboutMe) onmouseout=myFunction(aboutMe) id="aboutMe" class="dropdown-content">
+                            <a href="Resume.html">Résume</a>
+                            <a href="https://www.linkedin.com/in/vincent-taylor-4b151283/">LinkedIn</a>
+                        </div>    
+                     <img class="menuArrow" src="arrow.png" usemap="#buttmap" width="15" height="10">
+                </div>
+                </li>
+            <li>
+                <div class="dropdown">
+                    <button id="dropbtn" onmouseover=myFunction(Media) onmouseout=myFunction(Media) class="dropbtn">Media</button>
+                        <div onmouseover=myFunction(Media) onmouseout=myFunction(Media) id="Media" class="dropdown-content">
+                            <a href="Picture.html">Pictures</a>
+                            <a href="Twitch.html">Twitch</a>
+                            <a href="Radio_Playlist.html">Radio</a>
+                            
+                        </div>    
+                    <img class="menuArrow" src="arrow.png" usemap="#buttmap" width="15" height="10">
+       
+                    </div>
+                
+                </li>
+            <li>
+                <a class="dropbtn" href="https://github.com/Hitmonrocker">GitHub</a>
+                </li>
+        </ul>
+    </header>
+     <body>
+        
+    </body>
+    <body id="Page_2">
+        
+    </body>
+    <script type="text/javascript" >
+      function myFunction(x) {
+        x.classList.toggle("show");
+      }
+    </script>
+</html>

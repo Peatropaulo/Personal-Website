@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Main Menu</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="Pictures.css" rel="stylesheet" type="text/css"/>
+    
+    
+</head>
+    
+    <header>
+        <img id="sideBar"  src="Menu.png"  usemap="#buttmap" width="20" height="20" onclick="toggleMenu()">
+            <map name="buttmap"  >
+                <area shape="circle" coords="20 20 0" >
+            </map>
+         <a id="Home" href="Fp.html">Home</a>
+        <div id="sideMenu">
+                <ul>
+                   <li> <a href="Resume.html">Résume</a></li>
+                   <li> <a href="https://www.linkedin.com/in/vincent-taylor-4b151283/">LinkedIn</a></li>
+                   <li> <a href="Pictures.html">Pictures</a></li>
+                   <li> <a href="Twitch.html">Twitch</a></li>
+                  <li>  <a href="Radio_Playlist.html">Radio</a></li>
+                  <li>  <a class="dropbtn" href="https://github.com/Hitmonrocker">GitHub</a></li>
+                    <li>  <a class="dropbtn" href="http://msglobe.org">Multiple Sclerosis Globe</a></li>
+                </ul>
+        </div>
+    </header>
+    <body >
+        
+    </body>
+    
+    <body onload="menuOff()" id="Page_2">
+        
+    </body>
+    
+    <script type="text/javascript" >
+        document.getElementById("sideMenu").onmouseleave=function(){menuOff()};
+      function toggleMenu() {
+          var x= document.getElementById("sideMenu");
+          
+          if(x.style.display=='none'){
+              x.style.display='block';}
+          else{
+              x.style.display='none';}
+      }
+        function menuOff(){
+            document.getElementById("sideMenu").style.display='none';
+        }
+    </script>
+</html>
